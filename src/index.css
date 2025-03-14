@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #5f6368;
+    --background-color: #ffffff;
+    --border-color: #dadce0;
+    --hover-color: #f1f3f4;
+    --text-color: #202124;
+    --error-color: #d93025;
+    --success-color: #0f9d58;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Popup Styles */
+  .popup-container {
+    width: 320px;
+    padding: 16px;
+  }
+  
+  /* Options Page Styles */
+  .options-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 16px 0;
+  }
+  
+  .form-group {
+    margin-bottom: 16px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    min-height: 80px;
+    font-family: monospace;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  .help-text {
+    color: var(--secondary-color);
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .primary-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .primary-button:hover {
+    opacity: 0.9;
+  }
+  
+  .primary-button:disabled {
+    background-color: var(--border-color);
+    cursor: not-allowed;
+  }
+  
+  .secondary-button {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .secondary-button:hover {
+    background-color: rgba(26, 115, 232, 0.04);
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .message {
+    margin-top: 12px;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .success-message {
+    color: var(--success-color);
+    font-weight: 500;
+    margin-left: 12px;
+  }
+  
+  .options-section {
+    margin-bottom: 32px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .auto-save-rules {
+    margin-top: 12px;
+  }
+  
+  .rule-item {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 8px;
+  }
+  
+  .rule-item input {
+    flex-grow: 1;
+  }
+  
+  .remove-button {
+    background-color: var(--error-color);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .options-actions {
+    margin-top: 24px;
+  }
